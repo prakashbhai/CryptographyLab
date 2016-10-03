@@ -9,6 +9,11 @@
 *.gch
 *.pch
 
+# IDE files
+*.iml
+*.idea
+*out
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
