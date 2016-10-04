@@ -78,6 +78,7 @@ int main(){
     int k=0,l=0;
     char matrix[5][5];
     for(int i=0;i<strlen(ciphertext);i++){
+        if(!bitmask[ciphertext[i]-'a']){
         bitmask[ciphertext[i]-'a'] = true;
         matrix[k][l] = ciphertext[i];
         l++;
@@ -85,6 +86,7 @@ int main(){
             l=0;
             k++;
         }
+       }    
     }
     bitmask['j'-'a'] = true;
     for(int i=0;i<26;i++){
